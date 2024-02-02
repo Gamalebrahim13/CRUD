@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANGORA</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="w-50  m-auto p-5 ">
+        <label for="product Name">product Name<span class="text-danger">*</span></label>
+        <input type="text" class="form-control " id="product Name">
+        <div  class="alert alert-danger p-2 mt-2 d-none" id="nameAlert">product Name first harff should be capital</div>
+        <div id="alertname" class="alert alert-danger p-2 mt-2 d-none">product name shoud be bla bla</div>
+        <label for="product Price">product Price<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="product Price">
+        <label for="product category">product category<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="product category">
+        <label for="product Description">product Description<span class="text-danger">*</span></label>
+        <textarea id="product Desc" class="form-control"></textarea>
+        <button  id="addBtn" disabled class="btn btn-primary mt-4 d-block float-end " >Add product</button>
+        <div class="clearfix"></div>
+        <input onkeyup="search(this.value)" type="text" class="form-control my-4" placeholder="search by name..">
+    
+    <table class="table table-striped">       
+    <thead>
+            <th>product Name</th>
+            <th>product Price</th>
+            <th>product category</th>
+            <th>product Description</th>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+        <script src="js/bootstrap.bundle.min.js"></SCript>
+        <script src="js/main.js"></script>
+    </body>
+        
+
